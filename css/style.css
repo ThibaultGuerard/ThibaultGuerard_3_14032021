@@ -31,6 +31,20 @@ body a {
   color: black;
 }
 
+#loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #99E2D0;
+  z-index: 1000;
+  display: flex;
+  animation: loader 3s;
+  animation-fill-mode: forwards;
+}
+#loader span {
+  margin: auto;
+}
+
 /*HEADER*/
 #header_main {
   padding-top: 10px;
@@ -510,9 +524,11 @@ footer nav ul li span {
 /*KEYFRAMES*/
 @keyframes loader {
   0% {
+    z-index: 1000;
     opacity: 1;
   }
   95% {
+    z-index: 1000;
     opacity: 1;
   }
   100% {
